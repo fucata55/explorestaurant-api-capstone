@@ -1,2 +1,5 @@
 Zomato API Key
 526eb86cb3e39c4e5f4fa9ba0031fbf0
+
+Google API
+AIzaSyAuQxnyeTiG2xHqYKu3EDRxP9owZqfiAjc
