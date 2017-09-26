@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/*Make image covers whole background*/
+
+
+/*Question: Supposed to blur the background*/
+
+body {
+    background: url(https://wallpaperscraft.com/image/meat_sauce_restaurant_hot_43741_1920x1080.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+*/
+}
+
+header {
+    text-align: center;
+    max-width: 1000px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    display: inline;
+    width: 40%;
+    max-width: 600px;
+    min-width: 150px;
+    padding: 20px;
+}
+
+hidden {
+    display: none;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 200px;
+}
+
+
+/*Question: Change font type and color*/
+
+h1 {
+    font-weight: 400;
+    font-size: 50px
+}
+
+
+/*Question: Change font type and color*/
+
+.moto {
+    font-size: 20px;
+}
+
+
+/*Question: Change placeholder color into the contrast*/
+
+input {
+    width: 50%;
+    min-width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: dimgrey;
+    border: 3px solid lightgrey;
+}
+
+header.searched {
+    background-color: golden;
+    height: 300px;
+    border-bottom: 5px solid goldenrod;
+    padding: 20px;
+    text-align: left;
+}
+
+.logo.searched {
+    height: 80px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.moto.searched {
+    display: none;
+}
+
+
+/*Question: move 2 sections into the center horizontal of the main in the fewest css*/
+
+.zomato-output-section,
+.youtube-output-section {
+    display: inline-block;
+    background-color: chocolate;
+    border: 5px gold solid;
+}
+
+.zomato-output-section {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.youtube-output-section {
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+.zomato-outputs,
+.youtube-outputs {
+    background-color: lightsalmon;
+}
+
+.zomato-output,
+.youtube-output {
+    padding: 15px;
+    border-bottom: 2px grey solid
+}
+
+
+/*Question: Change placeholder color into the contrast*/
+
+.input-box.searched {
+    background-color: black;
+    height: 25px;
+    width: 30%;
+    min-width: 150px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.zomato-output-image,
+.youtube-output-image {
+    height: 80px;
+    margin-right: 15px;
+}
+
+.zomato-output-restaurant-name,
+.youtube-output-video-name {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: top;
+}
