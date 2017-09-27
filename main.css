@@ -22,20 +22,27 @@
 
 /*Question: Supposed to blur the background*/
 
-body {
+
+/*Photoshop because background image must target HTML and blur targets Body(which makes every child blurred)*/
+
+html {
     background: url(https://wallpaperscraft.com/image/meat_sauce_restaurant_hot_43741_1920x1080.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*
+}
+
+
+/*
+body {
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-*/
 }
+*/
 
 header {
     text-align: center;
@@ -49,6 +56,7 @@ header {
 
 main {
     padding: 20px;
+    text-align: center;
 }
 
 section {
@@ -69,7 +77,7 @@ hidden {
 }
 
 
-/*Question: Change font type and color*/
+/*Question: Change font type and color
 
 h1 {
     font-weight: 400;
@@ -86,6 +94,9 @@ h1 {
 
 /*Question: Change placeholder color into the contrast*/
 
+
+/*Answer: target input::placeholder*/
+
 input {
     width: 50%;
     min-width: 300px;
@@ -95,8 +106,18 @@ input {
     padding-right: 20px;
     background-color: dimgrey;
     border: 3px solid lightgrey;
+    color: white;
 }
 
+input::placeholder {
+    color: white;
+}
+
+
+/*Position wmust be absolute(hard) to execute .searched class*/
+
+
+/*
 header.searched {
     background-color: golden;
     height: 300px;
@@ -115,15 +136,20 @@ header.searched {
 .moto.searched {
     display: none;
 }
+*/
 
 
 /*Question: move 2 sections into the center horizontal of the main in the fewest css*/
+
+
+/*Answer: text-align: center the parent (Main) and overwrite text-align in desired sections*/
 
 .zomato-output-section,
 .youtube-output-section {
     display: inline-block;
     background-color: chocolate;
     border: 5px gold solid;
+    text-align: left;
 }
 
 .zomato-output-section {
@@ -149,6 +175,9 @@ header.searched {
 
 
 /*Question: Change placeholder color into the contrast*/
+
+
+/*Answer: Select CSS input::placeholder*/
 
 .input-box.searched {
     background-color: black;
