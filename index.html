@@ -3,6 +3,7 @@
 <head>
     <title>ExploREstaurants</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
 </head>
 
 <body>
@@ -12,19 +13,22 @@
         <img src="https://i.pinimg.com/736x/42/c3/39/42c3397907bbcbded0b912fa956f8a42--scallop-plating-fish-plating.jpg" class='logo' alt="ExploREstaurant logo">
         <h1>ExploREstaurant</h1>
         <p class='moto'>Only Eat The Best From Your Area</p>
-        <input type="text" class='input-box' placeholder="Dallas" />
+        <form class='search-query'>
+            <input type="text" name='user-query' class='input-box' placeholder="Search by Location" />
+            <input type='submit' name='user-query' class='input-submit' />
+        </form>
     </header>
-    <main role='main'>
+    <main role='main' class='main'>
         <section class='zomato-output-section'>
-            <h2 class='zomato-ouputs-heading'>Explore through location</h2>
+            <h2 class='zomato-outputs-heading'>Explore through location</h2>
             <div class='zomato-outputs'>
                 <div class='zomato-output'>
                     <!--                   Request image link, image alt, restaurant name, restaurant phone, and restaurant address from Zomato API-->
-                    <img src="https://i.pinimg.com/736x/42/c3/39/42c3397907bbcbded0b912fa956f8a42--scallop-plating-fish-plating.jpg" class='zomato-output-image' alt="">
-                    <h3 class='zomato-output-restaurant-name'>Eat 1000 Sushi Restaurant</p>
-                        <p class='zomato-output-restaurant-phone'>878.000.1234</p>
-                        <p class='zomato-output-restaurant-street'>127 Main Street, Suite 1bc</p>
-                        <p class='zomato-output-restaurant-state'>Dallas, Texas</p>
+                    <div style='background-image: url(https://i.pinimg.com/736x/42/c3/39/42c3397907bbcbded0b912fa956f8a42--scallop-plating-fish-plating.jpg)' class='zomato-output-image'></div>
+                    <h3 class='zomato-output-restaurant-name'>Eat 1000 Sushi Restaurant</h3>
+                    <p class='zomato-output-restaurant-phone'>878.000.1234</p>
+                    <p class='zomato-output-restaurant-street'>127 Main Street, Suite 1bc</p>
+                    <p class='zomato-output-restaurant-state'>Dallas, Texas</p>
                 </div>
             </div>
         </section>
