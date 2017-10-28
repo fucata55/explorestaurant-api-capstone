@@ -169,17 +169,17 @@ function a() {
 
 
 $(document).ready(function () {
-    let placeHolder = ['Search by Location', 'Country', 'State', 'City', 'Area'];
+    let text = ['Location', 'Country', 'State', 'City', 'Area'];
     let n = 0;
-    let loopLength = placeHolder.length;
+    let loopLength = text.length;
 
     setInterval(function () {
         if (n < loopLength) {
-            var newPlaceholder = placeHolder[n];
+            var newText = text[n];
             n++;
-            $('input').attr('placeholder', newPlaceholder);
+            $('.rotating-text').html(newText);
         } else {
-            $('input').attr('placeholder', placeHolder[0]);
+            $('rotating-text').html(text[0]);
             n = 0;
         }
     }, 2500);
