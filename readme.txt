@@ -1,8 +1,8 @@
-ExploREstaurants is a seamless API-driven website that satisfies the users' craving of restaurant discovery.
+ExploRestaurants is a seamless API-driven website that satisfies the users' craving of restaurant discovery.
 
 It uses front-end languages such as HTML, CSS, JS, JQuery
 
-ExploREstaurants will search over 1.5 million restaurants across 10,000 cities from Zomato database and 300 hours video uploaded per minute in YouTube, users get
+ExploRestaurants will search over 1.5 million restaurants across 10,000 cities from Zomato database and 300 hours video uploaded per minute in YouTube, users get
 to satify your craving of restaurant discovery. ExploREstaurants only gives users the bests and only the bests restaurants in
 the area. The main users of this app will be new movers, tourists, food enthusiasts, and explorers who are seeking to only
 eat the best food in town/country
